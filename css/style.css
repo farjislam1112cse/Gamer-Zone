@@ -1,5 +1,5 @@
 /* basic style */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 /* reusable style */
-body{
+body {
     font-size: 16px;
 }
 
@@ -16,50 +16,56 @@ body{
 
 
 /* nav bar */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
-    max-width:80%;
     width: 1140px;
     margin: 0 auto;
-    padding:1rem 0;
+    padding: 1rem 0;
 }
-.site-logo{
+
+.site-logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.site-logo img{
-    width:56px;
-    height:28px;
+
+.site-logo img {
+    width: 56px;
+    height: 28px;
 }
-.site-logo .site-name{
-font-size:2rem;
-font-weight: 700;
+
+.site-logo .site-name {
+    font-size: 2rem;
+    font-weight: 700;
 }
-.pink-alpha{
-background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
+.pink-alpha {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.menu{
-    display:flex;
+
+.menu {
+    display: flex;
     gap: 20px;
     align-items: center;
 }
-.menu li{
+
+.menu li {
     list-style: none;
-    
+
 }
 
-.menu a{
- color: #3C354F;
-font-size:1rem;
-font-weight: 500;
-text-decoration: none;
+.menu a {
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
 }
-.social-media{
+
+.social-media {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 0.65rem 2rem;
@@ -67,15 +73,118 @@ text-decoration: none;
     align-items: center;
     gap: 10px;
 }
-.social-media .fa-youtube{
+
+.social-media .fa-youtube {
     color: #F61C0D;
     font-size: 1.5rem;
 }
-.social-media .fa-square-facebook{
-    color:blue;
+
+.social-media .fa-square-facebook {
+    color: blue;
     font-size: 1.5rem;
 }
 
+
+/* banner section */
+.banner-container {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    align-items: center;
+}
+
+.content {
+    width: 50%;
+}
+
+.img {
+    width: 50%;
+}
+
+.img .img1 {
+    max-width: 100%;
+
+}
+
+.img-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.img .img2 {
+    max-width: 100%;
+}
+
+.img .hero-image {
+    max-width: 100%;
+}
+
+/* banner content */
+.banner-container .content h2 {
+    font-size: 48px;
+}
+
+.banner-container .content .color-text {
+    font-size: 95px;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.banner-container .content .quick-access {
+    padding: 5px;
+}
+
+.banner-container .content .quick-access li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.banner-container .content .quick-access li span {
+    margin-left: 10px;
+}
+
+.banner-container .content .quick-access li span i {
+    color: red;
+}
+
+.banner-container .content .quick-access li:last-child span i {
+    color: #313131;
+}
+
+.banner-container .content .quick-access li:first-child span i {
+    border: 1px solid #313131;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.banner-container .content .hero-button {
+    margin: 10px 0;
+}
+
+.banner-container .content .hero-button .button-1 {
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FF42A5;
+    color: white;
+
+}
+
+.banner-container .content .hero-button .button-2 {
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: none;
+    background-color: #4EC5F7;
+    color: white;
+
+}
+
+.banner-container .content .hero-button .button-1,
+.button-2 {
+    font-size: 20px;
+}
 
 
 
@@ -95,46 +204,45 @@ text-decoration: none;
 
 
 /* medium screen */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
     /* navbar */
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         gap: 20px;
     }
-}
-@media screen and (max-width: 576px){
-    /* navbar */
-    nav{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        gap: 20px;
-    }   
 }
 
-@media screen and (max-width:420px){
+@media screen and (max-width: 576px) {
+
     /* navbar */
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         gap: 20px;
     }
-    .menu{
+}
+
+@media screen and (max-width:420px) {
+
+    /* navbar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu {
         display: flex;
         gap: 20px;
         align-items: center;
         flex-direction: column;
-        
-    
+
+
     }
-        
+
 }
-
-
-
-
-
-
